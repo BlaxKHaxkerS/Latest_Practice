@@ -29,6 +29,7 @@ const createCount = random(6);
 const lotteryResult = prizeLottery();
 
 // 비교 (Compare)
+function compare() {
 for(var i=0; i<createCount.length; i++) {
     var currentCount = 0;
     for(var j=0; j<lotteryResult.length; j++) {
@@ -39,4 +40,5 @@ for(var i=0; i<createCount.length; i++) {
     
     // 출력 (Print)
     console.log((i+1) + "번째 : " + "총 6개 중 , ★ " + currentCount + " 개 정답 ★");
+}
 }
